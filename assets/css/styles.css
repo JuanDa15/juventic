@@ -8,3 +8,7 @@
   --white: #fff;
   --black: #000;
 }
+
+*,*::before,*::after{
+  font-family: 'Urbanist', sans-serif;
+}
