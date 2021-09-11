@@ -2,7 +2,7 @@ const btn = document.getElementById('btn');
 const links = document.querySelector('.links__container');
 
 function toggleNav(actualWidth){
-  if(actualWidth <= 815){
+  if(actualWidth <= 820){
     links.classList.add('toggle');
   }else{
     if(links.classList.contains('toggle')){
