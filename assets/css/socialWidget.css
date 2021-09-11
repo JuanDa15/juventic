@@ -1,0 +1,33 @@
+.networks__container{
+  background-color: var(--orange);
+  border-radius: .4rem;
+  box-shadow: 0px 0px 4px #222;
+  overflow: hidden;
+  position: absolute;
+  right: 1rem;
+  top: 130px;
+  z-index: 50;
+}
+
+.network {
+  display: grid;
+  place-items: center;
+  transition: background-color .5s ease;
+}
+
+.network a{
+  padding: .7rem;
+  width: 100%;
+  height: 100%;
+}
+
+.network:hover{
+  background-color: var(--purple);
+}
+
+.network a i{
+  color: var(--white);
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}

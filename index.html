@@ -9,11 +9,23 @@
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/socialWidget.css">
+  <script src="https://kit.fontawesome.com/1262f6c46a.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </head>
 <body>
+
+
+  <!-- Navbar Start  -->
   <nav class="navbar">
-    <span>Salsa&Salsa</span>
+    <span class="logo"><a href="#">sal&salsa</a></span>
+    <div  class="button"
+          id="btn">
+      <i class="fas fa-bars"></i>
+    </div>
     <ul class="links__container">
       <li class="link__item"><a href="#">Nosotros</a></li>
       <li class="link__item"><a href="#">Menú</a></li>
@@ -21,36 +33,75 @@
       <li class="link__item"><a href="#">Contáctanos</a></li>
     </ul>
   </nav>
-  <section class="carousel__container">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/img/foto1@2x.png" class="d-block w-100" alt="...">
+  <!-- Navbar End -->
+
+  <!-- Social network start-->
+  <ul class="networks__container">
+    <li class="network">
+      <a href="#">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+    </li>
+    <li class="network">
+      <a href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li class="network">
+      <a href="#">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </li>
+  </ul>
+  <!--  Social network end-->
+
+  <!-- Carousel start -->
+  <div class="carousel__container">
+    <div  id="carouselExampleIndicators"
+          class="carousel slide" 
+          data-bs-ride="carousel">
+      <div  class="carousel-inner">
+
+        <div  class="carousel-item active">
+          <img  src="assets/img/foto1@2x.png"
+                class="d-block w-100 carousel_img" 
+                alt="...">
         </div>
+
         <div class="carousel-item">
-          <img src="assets/img/foto2@2x.png" class="d-block w-100" alt="...">
+          <img  src="assets/img/foto2@2x.png"
+                class="d-block w-100 carousel_img" 
+                alt="...">
         </div>
+
         <div class="carousel-item">
-          <img src="assets/img/foto3@2x.png" class="d-block w-100" alt="...">
+          <img src="assets/img/foto3@2x.png" class="d-block w-100 carousel_img" alt="...">
         </div>
+
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+      <button class="carousel-control-prev" 
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"
+              aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+      <button class="carousel-control-next" 
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+        <span class="carousel-control-next-icon"
+              aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
-  </section>
-  <section style="height: 100vh;">
 
-  </section>
+    </div>
+  </div>
+  <!-- Carousel end -->
+  <script src="assets/js/navbar.js"></script>
 </body>
 </html>
