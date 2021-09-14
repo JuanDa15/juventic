@@ -5,10 +5,6 @@ html, body {
   height: 100%;
 }
 
-img {
-  height: auto;
-}
-
 body {
   display: flex;
   flex-flow: column;
@@ -95,11 +91,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   margin: 0 150px;
-}
-
-.menu-items > div {
-  width: 100%;
-  background-color: orange;
 }
 
 .menu-items > button {
