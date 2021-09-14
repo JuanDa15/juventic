@@ -88,8 +88,8 @@
 .carousel-control-next,.carousel-control-prev{
   opacity: .6;
 }
-.carousel,.carousel-inner,.carousel-item,img{
-  height: 100vh;
+.carousel,.carousel-inner,.carousel-item,.carousel_img{
+  height: 100%;
 }
 .carousel-control-prev,.carousel-control-next{
   align-items: flex-end;
