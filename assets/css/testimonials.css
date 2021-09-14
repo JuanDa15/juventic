@@ -30,8 +30,16 @@
   color: var(--purple);
 }
 
-.testimonial{
+.slider{
+  display: flex;
+  flex-flow: row nowrap;
   width: 80%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.testimonial{
+  flex: 1 0 100%;
   margin: 0 auto;
   display: flex;
 }

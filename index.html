@@ -31,10 +31,10 @@
       <i class="fas fa-bars"></i>
     </div>
     <ul class="links__container">
-      <li class="link__item"><a href="/nosotros.html">Nosotros</a></li>
-      <li class="link__item"><a href="/menu.html">Menú</a></li>
-      <li class="link__item"><a href="/servicios.html">Servicios</a></li>
-      <li class="link__item"><a href="/contactanos.html">Contáctanos</a></li>
+      <li class="link__item"><a href="/nosotros.html"><i class="fas fa-address-card"></i>Nosotros</a></li>
+      <li class="link__item"><a href="/menu.html"><i class="fas fa-clipboard-list"></i>Menú</a></li>
+      <li class="link__item"><a href="/servicios.html"><i class="far fa-list-alt"></i>Servicios</a></li>
+      <li class="link__item"><a href="/contactanos.html"><i class="fas fa-phone"></i>Contáctanos</a></li>
     </ul>
   </nav>
   <!-- Navbar End -->
@@ -141,13 +141,19 @@
     <div class="column-1">
       <h2 class="recommendation__title">Los recomendados del chef</h2>
       <div  class="recommendation__menus">
-        <img class="menu__preview"
-        src="assets/img/menu1@2x.png" alt="menu 1">
-
-        <img class="menu__preview" src="assets/img/menu2@2x.png" alt="menu 2">
-
-        <img class="menu__preview" src="assets/img/menu3@2x.png" alt="menu 3">
-        <img class="menu__preview" src="assets/img/menu4@2x.png" alt="menu 4">
+        <div>
+          <img class="menu__preview"
+                src="assets/img/menu1@2x.png" alt="menu 1">
+        </div>
+        <div>
+          <img class="menu__preview" src="assets/img/menu2@2x.png" alt="menu 2">
+        </div>
+        <div>
+          <img class="menu__preview" src="assets/img/menu3@2x.png" alt="menu 3">
+        </div>
+        <div>
+          <img class="menu__preview" src="assets/img/menu4@2x.png" alt="menu 4">
+        </div>
       </div>
     </div>
     <div class="menu_access">
@@ -202,28 +208,50 @@
 
   <!-- Testimoniañs start -->
   <section class="testimonials__container">
-    <div class="btn-block">
-      <a href="#">
+    <div class="btn-block" id="left-btn">
+      <a href="">
         <i class="fas fa-arrow-left"></i>
       </a>
     </div>
-    <div class="testimonial">
-      <div class="profile">
-        <img src="/assets/img/personal1@2x.png" alt="">
+    <div class="slider" id="slider">
+      <div class="testimonial">
+        <div class="profile">
+          <img src="/assets/img/personal1@2x.png" alt="">
+        </div>
+        <blockquote class="quote">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quos doloribus asperiores accusantium optio. Officia reprehenderit laboriosam corporis rem nostrum excepturi, in, assumenda ducimus tempora quas illo nesciunt debitis blanditiis vel. Adipisci, animi minima distinctio id odio officiis labore unde iste dicta. Sequi quisquam voluptatibus consequatur, saepe sint non iste vero hic nesciunt incidunt iusto quam atque, doloremque illum facere repellendus libero. Obcaecati cumque ea delectus tempora odit debitis. Dolor..
+          <cite><b>jhon Harmon</b></cite>
+        </blockquote>
       </div>
-      <blockquote class="quote">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quos doloribus asperiores accusantium optio. Officia reprehenderit laboriosam corporis rem nostrum excepturi, in, assumenda ducimus tempora quas illo nesciunt debitis blanditiis vel. Adipisci, animi minima distinctio id odio officiis labore unde iste dicta. Sequi quisquam voluptatibus consequatur, saepe sint non iste vero hic nesciunt incidunt iusto quam atque, doloremque illum facere repellendus libero. Obcaecati cumque ea delectus tempora odit debitis. Dolor..
-        <cite><b>jhon Harmon</b></cite>
-      </blockquote>
+      <div class="testimonial">
+        <div class="profile">
+          <img src="/assets/img/personal2@2x.png" alt="">
+        </div>
+        <blockquote class="quote">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quos doloribus asperiores accusantium optio. Officia reprehenderit laboriosam corporis rem nostrum excepturi, in, assumenda ducimus tempora quas illo nesciunt debitis..
+          <cite><b>lady Harmon</b></cite>
+        </blockquote>
+      </div>
+      <div class="testimonial">
+        <div class="profile">
+          <img src="/assets/img/personal3@2x.png" alt="">
+        </div>
+        <blockquote class="quote">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quos doloribus asperiores accusantium optio. Officia reprehenderit laboriosam corporis rem nostrum excepturi, in, assumenda ducimus tempora quas illo nesciunt debitis..
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In nam officiis rem ex placeat quos sint repellat praesentium numquam qui.
+          <cite><b>Mary Harmon</b></cite>
+        </blockquote>
+      </div>
     </div>
-    <div  class="btn-block">
-      <a href="#">
+    <div  class="btn-block" id="right-btn">
+      <a href="">
         <i class="fas fa-arrow-right"></i>
       </a>
     </div>
   </section>
   <!-- Testimonials end -->
-  
+  <script src="assets/js/testimonial.js"></script>
   <script src="assets/js/navbar.js"></script>
 </body>
 </html>

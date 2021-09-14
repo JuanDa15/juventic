@@ -61,6 +61,13 @@ ul{
   place-items: center;
   text-transform: uppercase;
   transition: all .5s ease;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.link__item a i{
+  margin-right: .4rem;
 }
 
 .link__item:hover,.link__item:hover>a{
