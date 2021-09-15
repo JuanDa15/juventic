@@ -21,7 +21,6 @@
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
 </head>
-
 <body>
   <!-- Navbar Start  -->
   <nav class="navbar">
@@ -70,13 +69,18 @@
     vitae nulla est. Nulla facilisi. Vivamus quis maximus leo, a malesuada mauris. Nam dui lectus, congue et scelerisque
     eu, congue sagittis lacus. Sed quis porta erat, id bibendum est. Phasellus id ligula placerat, auctor urna et,
     scelerisque tortor.</p>
-    <select name="servicio" value="Seleccione su servicio"></p>><br>
+    <form><select>
+      <option>
+        Seleccione su servicio
+      </option>
+    </select>
+    </p>
     <input type="text" size="30" value="Asunto" name="Asunto"><br>
-  <input type="text" size="30" value="Nombre completo" name="nombre"><br>
-  <input type="email" size="30" value="Correo electronico" name="correo"><br>
-  <textarea name="mensaje" rows="10" cols="60">Su mensaje</textarea><br>
-  <input type="checkbox" name="terminos_condiciones"> Acepto terminos y condiciones<br>
-  <button name="Enviar">Enviar</button><br>
+    <input type="text" size="30" value="Nombre completo" name="nombre"><br>
+    <input type="email" size="30" value="Correo electronico" name="correo"><br>
+    <textarea name="mensaje" rows="10" cols="60">Su mensaje</textarea><br>
+    <input type="checkbox" name="terminos_condiciones"> Acepto terminos y condiciones<br>
+    <button name="Enviar">Enviar</button><br></form>
 </body>
 
 </html>
