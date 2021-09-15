@@ -40,10 +40,18 @@ const showItems = (items, wrapper, items_per_page, description) => {
       <span class="menu_label">${description}</span>
     `;
 
-    if (i % 2 === 0) {
-      item.classList.add('par');
+    if (i <= 3 || i > 7) {
+      if (i % 2 === 0) {
+        item.classList.add('par');
+      } else {
+        item.classList.add('impar');
+      }
     } else {
-      item.classList.add('impar');
+      if (i % 2 === 0) {
+        item.classList.add('impar');
+      } else {
+        item.classList.add('par');
+      }
     }
 
     wrapper.appendChild(item);
@@ -57,19 +65,19 @@ showItems(pictures, plates, num_items, des);
 const modal_window = document.getElementById('modal-container');
 
 const showModal = (modal_to_show) => {
-  const btn_items = document.getElementsByClassName('showmodal');
-  for (let i = 0; i < btn_items.length; i++) {
-    btn_items[i].addEventListener('click', () => {
+  const btn_items = document.querySelectorAll('button.showmodal');
+  btn_items.forEach(btn => {
+    btn.addEventListener('click', () => {
       modal_to_show.classList.add('show');
     });
-  }
+  });
 };
 
 showModal(modal_window);
 // Show modal window
 
 // Close modal
-const btn_close_modal = document.getElementById('close-moreinfo');
+const btn_close_modal = document.getElementById('close-modal');
 btn_close_modal.addEventListener('click', () => {
   modal_window.classList.remove('show');
 });
