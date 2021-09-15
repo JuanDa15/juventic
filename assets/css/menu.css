@@ -257,4 +257,10 @@ body {
   .menu-header > button {
     margin-right: 0 !important;
   }
+  .close-modal {
+    margin-right: 15px;
+  }
+  .menu-pagination {
+    margin: 0;
+  }
 }
