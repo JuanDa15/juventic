@@ -59,11 +59,7 @@ const showItems = (items, wrapper, items_per_page, description) => {
 };
 
 const screen_width = screen.width;
-if (screen_width < 820) {
-  showItems(pictures, plates, 4, des);
-} else {
-  showItems(pictures, plates, num_items, des);
-}
+showItems(pictures, plates, num_items, des);
 // Show plates
 
 // Show modal window
@@ -93,21 +89,11 @@ const btn_next = document.getElementById('next');
 const btn_prev = document.getElementById('previous');
 
 btn_next.addEventListener('click', () => {
-  if (screen_width < 820) {
-    showItems(pictures, plates, 4, des2);
-    showModal(modal_window);
-  } else {
-    showItems(pictures, plates, num_items, des2);
-    showModal(modal_window);
-  }
+  showItems(pictures, plates, num_items, des2);
+  showModal(modal_window);
 });
 btn_prev.addEventListener('click', () => {
-  if (screen_width < 820) {
-    showItems(pictures, plates, 4, des);
-    showModal(modal_window);
-  } else {
-    showItems(pictures, plates, num_items, des);
-    showModal(modal_window);
-  }
+  showItems(pictures, plates, num_items, des);
+  showModal(modal_window);
 });
 // Pagination
