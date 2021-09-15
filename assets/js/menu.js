@@ -36,7 +36,7 @@ const showItems = (items, wrapper, items_per_page, description) => {
     let item = document.createElement('button');
     item.classList.add('showmodal');
     item.innerHTML = `
-      <img src="assets/img/${items[i]}" width="200" height="158.531" alt=""><br>
+      <img class="menu_img" src="assets/img/${items[i]}" width="200" height="158.531" alt="">
       <span class="menu_label">${description}</span>
     `;
 
