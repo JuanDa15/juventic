@@ -13,12 +13,10 @@ body {
 
 .navbar-container {
   flex: 0 1 50px;
-  background-color: #636363;
 }
 
 .footer {
   flex: 0 1 150px;
-  background-color: #310101;
 }
 
 .menu__container {
@@ -37,7 +35,7 @@ body {
 .menu-header > h1 {
   flex: 1 1 auto;
   margin-left: 10px;
-  color: #5b3542;
+  color: var(--dark-Slate-Gray);
 }
 
 .menu-header > button {
@@ -45,7 +43,7 @@ body {
   margin-right: 300px;
   margin-top: 21.44px;
   margin-bottom: 21.44px;
-  background-color: #ff3c04;
+  background-color: var(--orange);
   border: none;
   border-radius: 10px;
   color: white;
@@ -76,7 +74,7 @@ body {
 }
 
 .modal {
-  background-color: #ffffff;
+  background-color: var(--white);
   width: 600px;
   max-width: 100%;
   padding: 30px 50px;
@@ -104,16 +102,16 @@ body {
 }
 
 .menu-items > button > span {
-  color: #fff;
+  color: var(--white);
   font-weight: bold;
 }
 
 .par {
-  background-color: #ff3c04;
+  background-color: var(--orange);
 }
 
 .impar {
-  background-color: #310101;
+  background-color: var(--dark-brown);
 }
 
 .menu-pagination {
@@ -130,7 +128,7 @@ body {
   font-weight: bold;
   font-size: 14px;
   border: none;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .menu-pagination > button:hover {
