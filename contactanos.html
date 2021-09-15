@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/navbar.css">
   <link rel="stylesheet" href="assets/css/socialWidget.css">
+  <link rel="stylesheet" href="assets/css/contactanos.css">
   <script src="https://kit.fontawesome.com/1262f6c46a.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,33 +56,42 @@
     </li>
   </ul>
   <!--  Social network end-->
-  <h1>Contáctanos</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pulvinar mi. Nunc consequat laoreet metus, et
-    egestas orci accumsan et. Mauris lacinia efficitur lorem, quis sollicitudin ipsum molestie scelerisque. Proin
-    vestibulum rhoncus odio ac tristique. Praesent rutrum tellus quis nibh vestibulum, sit amet sollicitudin risus
-    porttitor. Maecenas laoreet accumsan arcu vel imperdiet. Maecenas maximus velit egestas elit finibus sollicitudin.
-    Quisque id urna est. Cras eget lacus ut sapien molestie sagittis sed id eros. Integer semper interdum rhoncus. Donec
-    accumsan viverra ex, ac imperdiet dolor fringilla vitae. Aliquam semper dui ipsum, nec dapibus elit vehicula non. In
-    suscipit semper lorem, ac rutrum metus mattis viverra. Etiam dictum ante ac velit lacinia egestas. Aliquam lectus
-    turpis, consectetur eget sodales quis, malesuada in nunc. Nulla in eros et tortor tristique accumsan non non ante.
-
-    Sed a enim sit amet urna volutpat tincidunt eu et ex. Donec sit amet magna a diam placerat pharetra. Vestibulum
-    vitae nulla est. Nulla facilisi. Vivamus quis maximus leo, a malesuada mauris. Nam dui lectus, congue et scelerisque
-    eu, congue sagittis lacus. Sed quis porta erat, id bibendum est. Phasellus id ligula placerat, auctor urna et,
-    scelerisque tortor.</p>
-    <form><select>
-      <option>
-        Seleccione su servicio
-      </option>
-    </select>
-    </p>
-    <input type="text" size="30" value="Asunto" name="Asunto"><br>
-    <input type="text" size="30" value="Nombre completo" name="nombre"><br>
-    <input type="email" size="30" value="Correo electronico" name="correo"><br>
-    <textarea name="mensaje" rows="10" cols="60">Su mensaje</textarea><br>
-    <input type="checkbox" name="terminos_condiciones"> Acepto terminos y condiciones<br>
-    <button name="Enviar">Enviar</button><br></form>
-    <script src="assets/js/navbar.js"></script>
+  <div class="display-1 mb-5 fw-bold" style="text-align:center"></div>
+    <div class="margenes"><div class="display-1 mb-5 fw-bold" style="text-align:left">Contáctanos</div></div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="margenes">
+        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pulvinar mi. Nunc consequat laoreet metus, et
+          egestas orci accumsan et. Mauris lacinia efficitur lorem, quis sollicitudin ipsum molestie scelerisque. Proin
+          vestibulum rhoncus odio ac tristique. Praesent rutrum tellus quis nibh vestibulum, sit amet sollicitudin risus
+          porttitor. Maecenas laoreet accumsan arcu vel imperdiet. Mae1cenas maximus velit egestas elit finibus sollicitudin.
+          Quisque id urna est. Cras eget lacus ut sapien molestie sagittis sed id eros. Integer semper interdum rhoncus. Donec
+          accumsan viverra ex, ac imperdiet dolor fringilla vitae. Aliquam semper dui ipsum, nec dapibus elit vehicula non. In
+          suscipit semper lorem, ac rutrum metus mattis viverra. Etiam dictum ante ac velit lacinia egestas. Aliquam lectus
+          turpis, consectetur eget sodales quis, malesuada in nunc. Nulla in eros et tortor tristique accumsan non non ante.
+          Sed a enim sit amet urna volutpat tincidunt eu et ex. Donec sit amet magna a diam placerat pharetra. Vestibulum
+          vitae nulla est. Nulla facilisi. Vivamus quis maximus leo, a malesuada mauris. Nam dui lectus, congue et scelerisque
+          eu, congue sagittis lacus. Sed quis porta erat, id bibendum est. Phasellus id ligula placerat, auctor urna et,
+          scelerisque tortor.
+        </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <form><select class="borde_conf">
+          <div>
+              <option>
+                  Seleccione el servicio
+              </option>
+          <input type="text" class="borde_conf" size="40" placeholder="Asunto" required><br>
+          <input type="text" class="borde_conf" size="40" placeholder="Nombre completo" required><br>
+          <input type="email"class="borde_conf"size="40" placeholder="Correo electronico" required><br>
+          <textarea name="mensaje" class="borde_conf" rows="08" cols="40" placeholder="Su mensaje" required></textarea><br>
+          <input type="checkbox" name="terminos_condiciones"> Acepto terminos y condiciones<br>
+          <button class="button_send">Enviar</button>
+        </form>
+      </div>
+    </div>
+  <script src="assets/js/navbar.js"></script>
 </body>
 
 </html>
