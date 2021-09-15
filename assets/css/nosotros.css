@@ -1,0 +1,11 @@
+h1{
+    color: var(--orange);
+}
+
+.historia_contenedor{
+    display:flex;
+    flex-flow:row nowrap;
+}
+.historia_imagen{
+    width:50%;
+}
