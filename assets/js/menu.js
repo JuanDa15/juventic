@@ -37,7 +37,7 @@ const showItems = (items, wrapper, items_per_page, description) => {
     item.classList.add('showmodal');
     item.innerHTML = `
       <img src="assets/img/${items[i]}" width="200" height="158.531" alt=""><br>
-      <span>${description}</span>
+      <span class="menu_label">${description}</span>
     `;
 
     if (i % 2 === 0) {

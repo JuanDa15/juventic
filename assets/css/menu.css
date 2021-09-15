@@ -135,6 +135,8 @@ body {
   cursor: pointer;
 }
 
+
+
 .previous {
   flex: 1 1 auto;
   margin-right: 50px;
@@ -162,5 +164,9 @@ body {
   }
   .footer {
     display: none;
+  }
+
+  .menu_label{
+    color: #000 !important;
   }
 }
