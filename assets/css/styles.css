@@ -120,7 +120,7 @@
   flex-wrap: wrap;
   background-color: var(--dark-brown);
   min-height: 20vh;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .footer_logo{
