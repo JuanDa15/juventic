@@ -13,6 +13,8 @@ html, body {
   margin: 0 auto;
   grid-template-areas: "title title title title title"
                        "general nosotros mapamenu servicios contact";
+
+  margin-bottom: 4rem;
 }
 
 .mapa__container > h1 {
@@ -71,6 +73,8 @@ html, body {
                          "mapamenu"
                          "servicios"
                          "contact";
+
+    margin-bottom: 0rem;
   }
 
   .mapa__container > h1 {
