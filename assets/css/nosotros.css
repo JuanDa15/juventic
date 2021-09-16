@@ -36,6 +36,15 @@ h1{
     .empleado{
         flex:1 1 auto;
     }
+
+    .historia_contenedor{
+        flex-flow: column nowrap;
+    }
+
+    .historia_imagen{
+        width: 90%;
+        margin-left: 5% !important;
+    }
 }
 
 .imagen_empleados{
