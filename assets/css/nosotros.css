@@ -42,16 +42,11 @@ h1{
     border: 5px solid var(--silver);
     outline: 4px solid var(--light-gray);
     border-radius:50%;
-    width: 150px;
+    width: 250px;
 }
 
 .caption {
     font-family: 'Permanent Marker', cursive;
     color: var(--black);
     display: block;
-}
-hr {
-    border: 10%;
-    height: 60%;
-    box-shadow: inset 0 12px 12px -12px white;
 }
