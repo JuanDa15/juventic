@@ -96,14 +96,43 @@
             <option value="item 6">Cena con amigos</option>
           </select>
           </select>
-          <input type="text" class="borde_conf" size="40" name="asunto" placeholder="Asunto" required>
-          <input type="text" class="borde_conf" size="40" name="nombre" placeholder="Nombre completo"
-            pattern="[A-Za-zñÑ]{3,30}" required>
-          <input type="email" class="borde_conf" size="40" name="correo" placeholder="Correo electronico" minlength="6"
-            maxlength="30" required>
-          <textarea name="mensaje" class="borde_conf" rows="08" cols="40" placeholder="Su mensaje" required></textarea>
-          <input type="checkbox" name="terminos_condiciones" minlength="6" maxlength="300" required> Acepto terminos y
-          condiciones<br>
+          <input  type="text" 
+                  class="borde_conf" 
+                  name="asunto" 
+                  placeholder="Asunto" 
+                  required>
+
+          <input  type="text" 
+                  class="borde_conf" 
+                  name="nombre" 
+                  placeholder="Nombre completo"
+                  pattern="[A-Za-zñÑ ]{3,30}" 
+                  required>
+
+          <input  type="email" 
+                  class="borde_conf" 
+                  size="40" 
+                  name="correo" 
+                  placeholder="Correo electronico" minlength="6"
+                  maxlength="30" 
+                  required>
+
+          <textarea name="mensaje" 
+                    class="borde_conf" 
+                    rows="08" 
+                    cols="40" 
+                    placeholder="Su mensaje" 
+                    required>
+          </textarea>
+          <div>
+            <label style="display: inline;" for="tyc">Acepto terminos y condiciones</label>
+           <input  type="checkbox"
+                  name="terminos_condiciones"
+                  minlength="6" 
+                  maxlength="300" 
+                  id="tyc"
+                  required>
+          </div>
           <button class="button_send">Enviar</button>
         </form>
       </div>

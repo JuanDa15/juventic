@@ -42,6 +42,7 @@
   padding: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.164);
   border-radius: .2rem;
+  padding-bottom: 1.8rem !important;
 }
 .event img{
   height: 150px;
@@ -55,23 +56,23 @@
   margin-top: 1rem;
   color: white;
   font-weight: 400;
+  margin-bottom: 2rem;
 }
 
-.event button{
+.event a{
   border-radius: 100%;
   border: 1px solid var(--white);
   background-color: inherit;
-  color: var(--white);
+  color: var(--white) !important;
   font-size: 1rem;
   padding: 1rem;
-  margin-top: 1.5rem;
 }
 
-.event button i{
+.event a i{
   transition: transform .5s ease;
 }
 
-.event button:hover > i{
+.event a:hover > i{
   transform: rotate(360deg);
 }
 /* Events End */

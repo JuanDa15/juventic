@@ -46,18 +46,19 @@
   width: 300px;
   height: 450px;
 }
-.menu_access button{
+.menu_access a{
+  text-align: center;
   margin-top: 3rem;
   width: 300px;
   border: none;
   padding: .7rem 1.4rem;
   background-color: var(--orange);
-  color: var(--white);
+  color: var(--white) !important;
   font-weight: 600;
   border-radius: .2rem;
   transition: background-color .5s ease;
 }
-.menu_access button:hover{
+.menu_access a:hover{
   background-color: var(--purple);
 }
 /* Recommendation end */
