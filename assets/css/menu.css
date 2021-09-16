@@ -19,9 +19,6 @@ body {
   flex: 0 1 50px;
 }
 
-.footer {
-  flex: 0 1 150px;
-}
 
 .menu__container {
   flex: 1 1 auto;
@@ -31,15 +28,19 @@ body {
 }
 
 .menu-header {
+  width: 90%;
+  margin: 0 auto;
   flex: 0 1 80px;
   display: flex;
   flex-flow: row;
+  justify-content: space-between;
 }
 
 .menu-header > h1 {
-  flex: 1 1 auto;
-  margin-left: 10px;
   color: var(--dark-Slate-Gray);
+  text-align: center;
+  display: grid;
+  place-items: center;
 }
 
 .menu-header > button {
@@ -181,6 +182,7 @@ body {
 }
 
 #download{
+  margin-right: 0;
   padding: .6rem 1.2rem;
   transition: background-color .5s ease;
 }
@@ -199,6 +201,7 @@ body {
   flex: 1 1 auto;
   margin-left: 50px;
   text-align: left;
+  justify-self: flex-end;
 }
 
 @media print {
