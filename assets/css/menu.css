@@ -29,13 +29,14 @@ body {
 .menu-header {
   width: 90%;
   margin: 0 auto;
-  flex: 0 1 80px;
+  flex: 0 1 100px;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
 }
 
 .menu-header > h1 {
+  font-size: 4rem;
   color: var(--dark-Slate-Gray);
   text-align: center;
   display: grid;
@@ -45,8 +46,8 @@ body {
 .menu-header > button {
   flex: 0 1 auto;
   margin-right: 300px;
-  margin-top: 21.44px;
-  margin-bottom: 21.44px;
+  margin-top: 41.44px;
+  margin-bottom: 41.44px;
   background-color: var(--orange);
   border: none;
   border-radius: 10px;
@@ -69,6 +70,7 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.3);
+  transition: 500ms;
   opacity: 0;
   pointer-events: none;
 }
@@ -78,6 +80,11 @@ body {
   opacity: 1;
 }
 
+.modal-container.show > div {
+  transition: 500ms;
+  transform: scale(1);
+}
+
 .modal-container > div {
   background-color: var(--white);
   width: 600px;
@@ -85,6 +92,8 @@ body {
   padding: 30px 50px;
   box-shadow: rgba(0, 0, 0, 0.2);
   text-align: center;
+  transition: 500ms;
+  transform: scale(0);
 }
 
 .modal-header {
@@ -96,7 +105,9 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.modal-header > h1 {
+.modal-header > h2 {
+  margin: 0;
+  font-size: 2rem;
   color: var(--dark-brown);
 }
 
