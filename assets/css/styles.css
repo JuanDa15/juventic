@@ -99,7 +99,7 @@
   z-index: 10;
 }
 .carousel-control-prev-icon,.carousel-control-next-icon{
-  background-color: var(--orange);  
+  background-color: var(--orange);
   padding: 1.5rem;
   border-radius: 5rem;
   transition: background-color .5s ease;
