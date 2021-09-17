@@ -1,0 +1,7 @@
+h1, h3{
+    color: var(--dark-brown);
+}
+
+.card-background{
+    background-color: var(--light-gray);
+}
