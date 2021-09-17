@@ -124,6 +124,24 @@ body {
   border-bottom-right-radius: 10px;
 }
 
+.boton-contactanos {
+  align-self: end;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  height: 30px;
+}
+
+.boton-contactanos > a {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.boton-contactanos:hover {
+  cursor: pointer;
+}
+
 .menu-items {
   flex: 1 1 auto;
   width: 90%;
@@ -272,6 +290,9 @@ body {
   }
   .menu-header > button {
     margin-right: 0 !important;
+  }
+  .menu-header > h1 {
+    font-size: 2rem;
   }
   .close-modal {
     margin-right: 15px;
