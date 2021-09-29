@@ -1,6 +1,12 @@
 const btn = document.getElementById('btn');
 const links = document.querySelector('.links__container');
 
+window.addEventListener('resize', (e)=> {
+  const actualWidth = e.target.visualViewport.width;
+
+  toggleNav(actualWidth);
+})
+
 function toggleNav(actualWidth){
   if(actualWidth <= 820){
     links.classList.add('toggle');

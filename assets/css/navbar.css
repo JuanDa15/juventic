@@ -52,6 +52,10 @@ ul{
   transition: background-color .5s ease;
 }
 
+.cart{
+  flex: .5 1 auto;
+}
+
 .link__item a{
   color: var(--white);
   display: grid;
@@ -83,7 +87,7 @@ ul{
   transform: rotate(360deg);
 }
 
-@media screen and (max-width:815px) {
+@media screen and (max-width:800px) {
 
   .button{
     display: block;
