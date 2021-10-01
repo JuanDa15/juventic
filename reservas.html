@@ -23,6 +23,7 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
     <script defer src="assets/js/navbar.js"></script>
+    <script src="assets/js/reservas_form.js"></script>
     <!-- Script para notificaciones -->
     <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
@@ -81,10 +82,10 @@
             </select>
 
             <input type="number" class="borde_conf" id="numPerReserva" placeholder="Numero de personas" required>
-            <select class="borde_conf" required id="servicioReserva">
-                <option disabled selected value="">Selecciona una fecha</option>
-                <option value="Celebración de cumpleaños">Brrr</option>
-            </select>
+
+            <input type="date" class="borde_conf" id="fechaRerReserva" placeholder="Seleccione la fecha" required>
+
+
             <!--
                 <input type="Fecha" class="borde_conf" id="fechaReserva" placeholder="Seleccione la fecha" required>
             -->
