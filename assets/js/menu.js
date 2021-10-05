@@ -1,3 +1,51 @@
+const dishes = 
+[
+  {
+    "id":1,
+    "nombre": "fneifenfo",
+    "descripcion":"defergghrdhtdh",
+    "precio":20000,
+    "img": "ddgdprjhgotipjhtfh"
+  },
+  {
+    "id":2,
+    "nombre": "fneifenfo",
+    "descripcion":"defergghrdhtdh",
+    "precio":20000,
+    "img": "ddgdprjhgotipjhtfh"
+  },
+  {
+    "id":3,
+    "nombre": "fneifenfo",
+    "descripcion":"defergghrdhtdh",
+    "precio":20000,
+    "img": "ddgdprjhgotipjhtfh"
+  },
+  {
+    "id":4,
+    "nombre": "fneifenfo",
+    "descripcion":"defergghrdhtdh",
+    "precio":20000,
+    "img": "ddgdprjhgotipjhtfh"
+  },
+  {
+    "id":5,
+    "nombre": "fneifenfo",
+    "descripcion":"defergghrdhtdh",
+    "precio":20000,
+    "img": "ddgdprjhgotipjhtfh"
+  },
+  {
+    "id":6,
+    "nombre": "fneifenfo",
+    "descripcion":"defergghrdhtdh",
+    "precio":20000,
+    "img": "ddgdprjhgotipjhtfh"
+  }
+]
+
+
+
 // Donwload Button setup
 const btn_download = document.getElementById('download');
 

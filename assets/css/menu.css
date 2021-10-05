@@ -146,9 +146,8 @@ body {
   flex: 1 1 auto;
   width: 90%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-flow: column nowrap;
   gap: 10px;
 }
 
@@ -230,6 +229,27 @@ body {
   margin-left: 50px;
   text-align: left;
   justify-self: flex-end;
+}
+
+.plate{
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: .5rem;
+  background-color: rgb(245, 245, 245);
+  overflow: hidden;
+}
+
+.plate__image{
+  width: 250px;
+  height: 150px;
+}
+
+.plate__description{
+  padding: 1rem .5rem;
+}
+
+.name{
+  margin: 0;
 }
 
 @media print {
