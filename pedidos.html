@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/socialWidget.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <script src="https://kit.fontawesome.com/1262f6c46a.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/pedidos.css">
+</head>
+
+<body>
+
+  <!-- Navbar Start  -->
+  <nav class="navbar">
+    <span class="logo"><a href="/index.html">sal&salsa</a></span>
+    <div class="button" id="btn">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="links__container">
+      <li class="link__item"><a href="/nosotros.html"><i class="fas fa-address-card"></i>Nosotros</a></li>
+      <li class="link__item"><a href="/menu.html"><i class="fas fa-clipboard-list"></i>Menú</a></li>
+      <li class="link__item"><a href="/servicios.html"><i class="far fa-list-alt"></i>Servicios</a></li>
+      <li class="link__item"><a href="/contactanos.html"><i class="fas fa-phone"></i>Contáctanos</a></li>
+      <li class="link__item cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+    </ul>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Social network start-->
+  <ul class="networks__container">
+    <li class="network">
+      <a href="#">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+    </li>
+    <li class="network">
+      <a href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li class="network">
+      <a href="#">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </li>
+  </ul>
+  <!--  Social network end-->
+
+  <div class="container">
+
+    <h1>Haz tu pedido</h1>
+
+    <div class="items" id="items"></div>
+
+    <div class="menu-pagination" id="pagination">
+      <button class="previous" id="previous"><i class="fas fa-arrow-left"></i> ANTERIOR</button>
+      <button class="next" id="next">SIGUIENTE <i class="fas fa-arrow-right"></i></button>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer_logo">
+      <img src="assets/img/logo@2x.png" alt="logo">
+    </div>
+    <div class="footer_content">
+      <ul class="links">
+        <li><a href="mapa.html">Mapa del sitio</a></li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
+        <li><a href="contactanos.html">Reservas</a></li>
+      </ul>
+      <div class="information">
+        <span class="name">Restaurante Sal y Salsa Ltda</span>
+        <address class="direction">Calle 19 No. 7 - 30, Bogota</address>
+        <span class="email">reservas@salysalsa.com</span>
+        <span class="phone">31232525321</span>
+
+        <span class="copy"> &copy; Copyright 2020.</span>
+      </div>
+    </div>
+    <div class="footer_mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9342344323495!2d-74.0740024847494!3d4.605797243754412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a1f30307cf%3A0xf863232d4608bc5b!2zQ2wuIDE5ICM3LTMwLCBCb2dvdMOh!5e0!3m2!1sen!2sco!4v1631767138339!5m2!1sen!2sco"
+        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </footer>
+
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/pedidos.js"></script>
+
+</body>
+
+</html>
