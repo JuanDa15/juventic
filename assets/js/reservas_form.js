@@ -1,3 +1,5 @@
+// declaro variable indicaciones, para enviar valor de "No agrega reservas", en caso de que este vacio
+
 // validaciones
 function validar_soloNumeros(e){
     key=e.keyCode || e.which;
@@ -33,13 +35,9 @@ function validar_soloNumeros_2(e){
         return false;
     }
 }
-function validar_indicaciones(auxiliar){
-    if (auxiliar.value=="" || auxiliar.value=== null){
-        auxiliar.value = "No agrega indicaciones";
-        return auxiliar;
-    }
-    return auxiliar;
-}
+
+
+
 /*var nombreRe = document.getElementById('nombreReserva').value;
 var telefonoRe = document.getElementById('telefonoReserva').value;
 var correoRe = document.getElementById('correoReserva').value;
@@ -58,11 +56,15 @@ const reserv_btn = document.getElementById('send_reserva');
 
 reserv.addEventListener('submit', (event) => {
     event.preventDefault();
-    sendForm(event)
+    sendForm(event);
 })
 
 
 function sendForm() {
+    var indicaciones= document.getElementById('indicacionesReserva').value;
+    if(indicaciones=="" || indicaciones===null){
+        indicaciones = "No agrega indicaciones";
+    }
     let tempBody = {
         nombreR: document.getElementById('nombreReserva').value,
         telefonoR: document.getElementById('telefonoReserva').value,
@@ -71,7 +73,7 @@ function sendForm() {
         personasR: document.getElementById('numPerReserva').value,
         fechaR: document.getElementById('fechaRerReserva').value,
         horasR: document.getElementById('horasReserva').value,
-        indicacionesR: document.getElementById('indicacionesReserva').value
+        indicacionesR: indicaciones
     }
 
     emailjs.send('service_p8aor5o', 'template_83va4yz', tempBody)

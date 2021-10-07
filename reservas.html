@@ -35,6 +35,7 @@
             <li class="link__item"><a href="/nosotros.html"><i class="fas fa-address-card"></i>Nosotros</a></li>
             <li class="link__item"><a href="/menu.html"><i class="fas fa-clipboard-list"></i>Menú</a></li>
             <li class="link__item"><a href="/servicios.html"><i class="far fa-list-alt"></i>Servicios</a></li>
+            <li class="link__item"><a href="/reservas.html"><i class="fas fa-address-card"></i>Reservas</a></li>
             <li class="link__item"><a href="/contactanos.html"><i class="fas fa-phone"></i>Contáctanos</a></li>
             <li class="link__item cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
         </ul>
@@ -63,7 +64,7 @@
     <div class="centrar_texto">
         <form id="reservas_form">
             <input type="text" class="borde_conf" id="nombreReserva" placeholder="Nombre" required>
-            <input type="text" class="borde_conf" id="telefonoReserva" maxlength="10"placeholder="Teléfono" onkeypress="return validar_soloNumeros(event)" required>
+            <input type="text" class="borde_conf" id="telefonoReserva" minlength="10" maxlength="10"placeholder="Teléfono" onkeypress="return validar_soloNumeros(event)" required>
 
             <input type="email" class="borde_conf" id="correoReserva" size="40" placeholder="Correo electrónico" required>
             <select class="borde_conf" required id="servicioReserva">
@@ -77,14 +78,14 @@
             </select>
 
             <input type="number" class="borde_conf" min="1" id="numPerReserva" placeholder="Numero de personas" onkeypress="return validar_soloNumeros_2(event)" required>
-
-            <input type="date" class="borde_conf" id="fechaRerReserva" placeholder="Seleccione la fecha" required>
+            <input class="borde_conf"  type="text" id="fechaRerReserva" placeholder="Seleccione la fecha" onclick="ocultarError();" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+            <!--<input type="date" class="borde_conf" id="fechaRerReserva" placeholder="Seleccione la fecha" required>-->
             <!--
                 <input type="Fecha" class="borde_conf" id="fechaReserva" placeholder="Seleccione la fecha" required>
             -->
             <input type="number" class="borde_conf" min="1" max="24" id="horasReserva" placeholder="Horas" onkeypress="return validar_soloNumeros_2(event)" required>
 
-            <textarea class="borde_conf" id="indicacionesReserva" rows="08" cols="40" placeholder="Indicaciones especiales" required></textarea>
+            <textarea class="borde_conf" id="indicacionesReserva" rows="05" cols="50" placeholder="Indicaciones especiales"></textarea>
 
             <button class="button_send" id="send_reserva">Realizar reserva</button>
         </form>
