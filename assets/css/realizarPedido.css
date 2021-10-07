@@ -1,0 +1,10 @@
+.container{
+  display: grid;
+  place-items: center;
+  padding: 10px 0;
+}
+.campoFormulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
