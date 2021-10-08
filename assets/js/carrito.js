@@ -181,6 +181,7 @@ const delItem = (nombre_plato, items_array, plates, divs) => {
       title_total_pagar.innerHTML = `$${totalAPagar(itemsCarrito, dishes)}`;
       if (items_array.length === 0) {
         showItems(dishes, itemsCarrito, div_items);
+        title_total_pagar.innerHTML = `$${totalAPagar(itemsCarrito, dishes)}`;
       }
     }
   });
