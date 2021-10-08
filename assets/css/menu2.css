@@ -205,3 +205,25 @@ body{
 .menu-pagination > button:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 800px){
+  .plate{
+    flex-direction: column;
+    border: 1px solid #999;
+    filter: drop-shadow(0 0 2px #aaa);
+    padding: 1rem
+  }
+
+  .plate img{
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .plate__description{
+    text-align: center;
+  }
+
+  .buttons__container{
+    margin: 0 auto
+  }
+}

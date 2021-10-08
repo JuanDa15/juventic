@@ -92,55 +92,74 @@ const input_btn = document.getElementById("send");
 input_btn.addEventListener("click", ()=>{
   let name = input_name.value;
   let email = input_email.value;
-  
-  sendForm(name, email);
+
+  if(name != "" && email != ""){
+    sendForm(name, email);
+  }else{
+    notification("Los campos no pueden estar vacios", 'error', ":c")
+  }
 
 });
 
 function sendForm(name, email){
+
+  if(localStorage.getItem('products')){
+    
+    let tempProducts = JSON.parse(localStorage.getItem('products'));
+    let productos = '';
+    let precioTotal = 0;
+
+    tempProducts.forEach((producto)=>{
+
+      let index = dishes.findIndex(dish=> {
+        return dish.id == producto.id
+      });
+
+      let tempPrice = (dishes[index].precio) * Number(producto.quantity);
+
+      let tempInfo = `
+        producto = ${dishes[index].nombre},
+        valor unitario = ${dishes[index].precio}, 
+        cantidad = ${producto.quantity},
+        valor total:  ${tempPrice};
+      `;
+
+        precioTotal+= tempPrice;
+        productos += tempInfo;
+    })
   
-  let tempProducts = JSON.parse(localStorage.getItem('products'));
+    
+    let emailBody = {
+      userEmail: email, 
+      subject: 'Notificacion de pedido',
+      name: name,
+      message: productos,
+      totalValue: precioTotal
+    }
 
-  let productos = '';
-  let precioTotal = 0;
-
-  tempProducts.forEach((producto)=>{
-
-    let index = dishes.findIndex(dish=> {
-      return dish.id == producto.id
-    });
-
-    let tempPrice = (dishes[index].precio) * Number(producto.quantity);
-
-    let tempInfo = `
-      producto = ${dishes[index].nombre},
-      valor unitario = ${dishes[index].precio}, 
-      cantidad = ${producto.quantity},
-      valor total:  ${tempPrice};
-    `;
-
-      precioTotal+= tempPrice;
-      productos += tempInfo;
-  })
- 
-  
-  let emailBody = {
-    userEmail: email, 
-    subject: 'Notificacion de pedido',
-    name: name,
-    message: productos,
-    totalValue: precioTotal
+    emailjs.send('service_6nraj6z', 'template_c7vrlva', emailBody).then(
+      ()=>{
+        notification("Correo enviado correctamente", 'success', ":)")
+        localStorage.clear();
+        input_name.value = '';
+        input_email.value = '';
+      },
+      (err)=>{console.log(err)}
+    
+    )
+  }else{
+    notification("No tienes elementos agregados en tu carrito", 'error');
   }
-
-  emailjs.send('service_6nraj6z', 'template_c7vrlva', emailBody).then(
-    ()=>{
-      console.log('correo enviado');
-      localStorage.clear();
-      input_name.value = '';
-      input_email.value = '';
-    },
-    (err)=>{console.log(err)}
   
-  )
+  
 
+}
+
+function notification(message,icon, textbtn){
+  Swal.fire({
+    text: message,
+    icon: icon,
+    confirmButtonText: textbtn,
+    timer: 2000
+  })
 }

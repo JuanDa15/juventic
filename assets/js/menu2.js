@@ -203,7 +203,6 @@ function getDish(dishID){
 
 function notification(message,icon){
   Swal.fire({
-    title: 'Error!',
     text: message,
     icon: icon,
     confirmButtonText: ':(',
