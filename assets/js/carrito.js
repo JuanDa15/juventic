@@ -129,7 +129,7 @@ const showItems = (plates, items_array, wrapper) => {
             <button class="editar">editar</button>
             <p>${plato.descripcion}</p>
             <button class="less">-</button>
-            <input type="number" class="quantity" value="${item.quantity}" />
+            <input type="number" min="1" oninput="validity.valid||(value='');" class="quantity" value="${item.quantity}" />
             <button class="plus">+</button>
           `;
           wrapper.appendChild(new_div);
@@ -157,7 +157,9 @@ plusBtns.forEach((plusBtn, index) => {
 
 lessBtns.forEach((lessBtn, index) => {
   lessBtn.addEventListener('click', () => {
-    inputs[index].value = Number(inputs[index].value) - 1;
+    if (Number(inputs[index].value) > 1) {
+      inputs[index].value = Number(inputs[index].value) - 1;
+    }
   });
 });
 
