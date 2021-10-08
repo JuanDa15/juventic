@@ -56,3 +56,11 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.centrar_texto form{
+    text-align: center;
+}
+
+.centrar_texto form input, .centrar_texto form select,.centrar_texto form textarea{
+    margin: 0 auto;
+}
