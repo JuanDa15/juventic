@@ -125,8 +125,8 @@ const showItems = (plates, items_array, wrapper) => {
             <img src="${plato.img}" width="250" alt="">
             <h3 class="title_name">${plato.nombre}</h3>
             <h3>$${plato.precio}</h3>
-            <button class="borrar">borrar</button>
-            <button class="editar">editar</button>
+            <button class="borrar"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            <button class="editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
             <p>${plato.descripcion}</p>
             <button class="less">-</button>
             <input type="number" min="1" oninput="validity.valid||(value='');" class="quantity" value="${item.quantity}" />
@@ -195,11 +195,11 @@ const editBtns = document.querySelectorAll('.editar');
 
 editBtns.forEach((editBtn, index) => {
   editBtn.addEventListener('click', () => {
-    editItem(inputs[index].value, index, itemsCarrito, dishes);
+    editItem(inputs[index].value, index, itemsCarrito);
   });
 });
 
-const editItem = (new_amount, index, store_products, array_products) => {
+const editItem = (new_amount, index, store_products) => {
   store_products[index].quantity = new_amount;
   localStorage.setItem('products', JSON.stringify(store_products));
   title_total_pagar.innerHTML = `$${totalAPagar(itemsCarrito, dishes)}`;
